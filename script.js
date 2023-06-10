@@ -43,10 +43,6 @@ function checkLose() {
   return getCactusRects().some(rect => isCollision(rect, dinoRect))
 }
 
-function checkLose() {
-  const dinoRect = getDinoRect()
-  return getShoeRects().some(rect => isCollision(rect, dinoRect))
-}
 
 function isCollision(rect1, rect2) {
   return (
